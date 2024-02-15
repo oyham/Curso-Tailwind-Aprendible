@@ -1,5 +1,5 @@
 ---
-
+import Anchor from "./Anchor.astro";
 ---
 
 <header class="bg-white shadow px-6">
@@ -48,19 +48,10 @@
         </svg>
       </a>
       <div class="space-x-8 ml-8 hidden md:flex">
-        <a class="px-3 py-2 text-slate-900" href="">Home</a>
-        <a
-          class="text-slate-600 px-3 py-2 hover:text-slate-900 transition-colors"
-          href="">About</a
-        >
-        <a
-          class="text-slate-600 px-3 py-2 hover:text-slate-900 transition-colors"
-          href="">Blog</a
-        >
-        <a
-          class="text-slate-600 px-3 py-2 hover:text-slate-900 transition-colors"
-          href="">Contact</a
-        >
+        <Anchor href="#" link="Home" />
+        <Anchor href="#" link="About" />
+        <Anchor href="#" link="Blog" />
+        <Anchor href="#" link="Contact" />
       </div>
     </div>
     <div class="flex">
@@ -99,29 +90,9 @@
     </div>
   </div>
   <div class="hidden space-y-1 pb-3 pt-2 border-t md:hidden">
-    <a
-      href="#"
-      class="text-slate-900 bg-slate-200
-       rounded-md px-3 py-2 block"
-      >Home</a
-    >
-    <a
-      href="#"
-      class="text-slate-500
-      hover:text-slate-900 hover:bg-slate-200 rounded-md px-3 py-2 block transition-colors"
-      >About</a
-    >
-    <a
-      href="#"
-      class="text-slate-500
-      hover:text-slate-900 hover:bg-slate-200 rounded-md px-3 py-2 block transition-colors"
-      >Blog</a
-    >
-    <a
-      href="#"
-      class="text-slate-500
-      hover:text-slate-900 hover:bg-slate-200 rounded-md px-3 py-2 block transition-colors"
-      >Contact</a
-    >
+    <Anchor href="#" link="Home" />
+    <Anchor href="#" link="About" />
+    <Anchor href="#" link="Blog" />
+    <Anchor href="#" link="Contact" />
   </div>
 </header>

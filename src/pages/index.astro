@@ -1,40 +1,15 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Card from "../components/Card.astro";
-import Footer from "./Footer.astro";
+import Cards from "./Cards.astro";
 ---
 
 <Layout title="Tailwind CSS.">
   <main class="p-4">
-    <h1 class="text-blue-900 font-bold text-center text-4xl m-4">
-      Tutorial Tailwind
+    <h1 class="font-bold text-center text-4xl m-4">
+      <span class="text-sky-400">Tailwind</span> + <span class="text-orange-600"
+        >Astro</span
+      >
     </h1>
-    <div class="grid md:grid-cols-3 max-w-5xl mx-auto gap-4 mt-6">
-      <Card
-        img="img/article-1.webp"
-        p="Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam reiciendis a obcaecati quia officia culpa fuga quasi earum hic necessitatibus eius, iusto, officiis praesentium omnis adipisci natus dolorem? Facilis, saepe."
-      />
-      <Card
-        img="img/article-2.webp"
-        p="Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam reiciendis a obcaecati quia officia culpa ."
-      />
-      <Card
-        img="img/article-3.webp"
-        p="Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam reiciendis a obcaecati quia officia culpa fuga quasi earum hic necessitatibus eius, iusto, officiis praesentium omnis adipisci natus dolorem? Facilis, saepe."
-      />
-      <Card
-        img="img/article-4.webp"
-        p="Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam reiciendis a obcaecati quia officia culpa fuga "
-      />
-      <Card
-        img="img/article-5.webp"
-        p="Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam reiciendis a obcaecati quia officia culpa fuga quasi earum hic necessitatibus eius, iusto, officiis praesentium omnis adipisci natus dolorem? Facilis, saepe."
-      />
-      <Card
-        img="img/article-6.webp"
-        p="Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam reiciendis a obcaecati quia officia culpa fuga quasi"
-      />
-    </div>
-    <Footer />
+    <Cards />
   </main>
 </Layout>
