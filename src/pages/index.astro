@@ -5,30 +5,37 @@ import Layout from "../layouts/Layout.astro";
 <Layout title="Tailwind CSS.">
   <main class="p-4">
     <h1 class="text-blue-900 font-bold text-center">Tutorial Tailwind</h1>
-    <article>
-      <div>
-        <img src="img/article-1.webp" alt="curso tailwind" />
+    <article class="bg-white rounded shadow overflow-hidden">
+      <div class="h-52">
+        <img
+          class="h-full w-full object-cover object-bottom"
+          src="img/article-1.webp"
+          alt="curso tailwind"
+        />
       </div>
-      <div>
-        <h3>Astro</h3>
-        <span
+      <div class="space-y-3 p-5">
+        <h3 class="text-sm font-semibold text-blue-950">Astro</h3>
+        <span class="text-xl font-semibold leading-tight text-slate-900"
           >Desarrollo de una SPA con Astro siguiendo las mejores practicas.</span
         >
-        <p>
+        <p class="text-slate-500">
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, est
           vero aliquid corporis dicta blanditiis inventore temporibus, facilis
           labore corrupti dolores et necessitatibus cumque aut pariatur in enim
           commodi quam!
         </p>
       </div>
-      <div>
+      <div class="flex space-x-2 p-5">
         <img
+          class="h-10 w-10 rounded-full"
           src="https://ui-avatars.com/api?name=Miguel Duran"
           alt="Miguel Duran"
         />
-        <div>
-          <span>Miguel Duran</span>
-          <span>Mier 14, 2024</span>
+        <div class="flex flex-col justify-center">
+          <span class="text-sm font-semibold leading-4 text-slate-600"
+            >Miguel Duran</span
+          >
+          <span class="text-sm text-slate-500">Mier 14, 2024</span>
         </div>
       </div>
     </article>
