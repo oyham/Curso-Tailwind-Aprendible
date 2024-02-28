@@ -7,7 +7,7 @@ import Anchor from "./Anchor.astro";
     <button
       class="text-slate-500
       hover:text-slate-900 hover:bg-slate-200 rounded-md p-1 -ml-1 transition-all focus:ring-2
-       focus:ring-slate-300"
+       focus:ring-slate-300 md:hidden"
     >
       <svg
         class="h-6 w-6"
@@ -25,9 +25,9 @@ import Anchor from "./Anchor.astro";
           d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"></path>
       </svg></button
     >
-    <div class="flex -mr-8 items-center">
+    <div class="flex -mr-8 items-center md:ml-[13rem] lg:ml-[18rem]">
       <a
-        href="#"
+        href="/"
         class="text-sky-900 hover:text-sky-600 hover:rotate-6 duration-200"
       >
         <svg
@@ -48,7 +48,7 @@ import Anchor from "./Anchor.astro";
         </svg>
       </a>
       <div class="space-x-8 ml-8 hidden md:flex">
-        <Anchor href="Home" link="Home" />
+        <Anchor href="/" link="Home" />
         <Anchor href="About" link="About" />
         <Anchor href="Blog" link="Blog" />
         <Anchor href="Contact" link="Contact" />
@@ -90,7 +90,7 @@ import Anchor from "./Anchor.astro";
     </div>
   </div>
   <div class="hidden space-y-1 pb-3 pt-2 border-t md:hidden">
-    <Anchor href="Home" link="Home" />
+    <Anchor href="/" link="Home" />
     <Anchor href="About" link="About" />
     <Anchor href="Blog" link="Blog" />
     <Anchor href="Contact" link="Contact" />
