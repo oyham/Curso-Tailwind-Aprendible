@@ -3,7 +3,43 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="Sobre Nosotros">
-  <main class="p-4">
-    <h1>Sobre nosotros</h1>
+  <main class="p-4 mx-auto max-w-screen-md text-center md:pt-20">
+    <h1 class="text-4xl font-bold mb-4">Sobre nosotros</h1>
+
+    <p class="text-lg leading-relaxed mb-8">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam eget purus
+      vel velit tincidunt sodales. Vivamus vitae arcu a massa fermentum
+      efficitur. Sed in magna ac elit feugiat vulputate.
+    </p>
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold mb-4">Nuestra Misión</h2>
+      <p class="text-lg leading-relaxed mb-4">
+        En nuestra organización, nos dedicamos a proporcionar soluciones
+        innovadoras y de alta calidad para nuestros clientes. Nos esforzamos por
+        ser líderes en la industria y contribuir positivamente a la comunidad.
+      </p>
+    </section>
+
+    <img
+      class="w-full h-auto mb-4 md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto"
+      src="img/article-3.webp"
+      alt="Descripción de la imagen 1"
+    />
+
+    <section class="mb-8">
+      <h2 class="text-2xl font-bold mb-4">Nuestro Equipo</h2>
+      <p class="text-lg leading-relaxed mb-4">
+        Contamos con un equipo talentoso y apasionado que trabaja de manera
+        colaborativa para alcanzar nuestros objetivos. Valoramos la diversidad y
+        la inclusión, creando un entorno donde cada miembro pueda prosperar.
+      </p>
+      <img
+        class="w-full h-auto mb-4 md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto"
+        src="img/article-6.webp"
+        alt="Descripción de la imagen 2"
+      />
+    </section>
+
+    <!-- Puedes seguir añadiendo más secciones y contenido según sea necesario -->
   </main>
 </Layout>
