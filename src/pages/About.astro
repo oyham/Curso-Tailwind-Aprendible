@@ -11,30 +11,47 @@ import Layout from "../layouts/Layout.astro";
       vel velit tincidunt sodales. Vivamus vitae arcu a massa fermentum
       efficitur. Sed in magna ac elit feugiat vulputate.
     </p>
+
     <section class="mb-8">
       <h2 class="text-2xl font-bold mb-4">Nuestra Misión</h2>
-      <p class="text-lg leading-relaxed mb-4">
+      <p class="text-lg leading-relaxed mb-4 md:pl-12 md:pr-12">
         En nuestra organización, nos dedicamos a proporcionar soluciones
         innovadoras y de alta calidad para nuestros clientes. Nos esforzamos por
         ser líderes en la industria y contribuir positivamente a la comunidad.
       </p>
-    </section>
+      <div class="relative flex items-center justify-center">
+        <!-- Imagen frontal (article-3) -->
+        <img
+          class="w-full h-auto mb-12 md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto rounded-lg shadow relative z-10"
+          src="img/article-3.webp"
+          alt="Descripción de la imagen 1"
+        />
 
-    <img
-      class="w-full h-auto mb-4 md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto"
-      src="img/article-3.webp"
-      alt="Descripción de la imagen 1"
-    />
+        <!-- Primera imagen a la izquierda en dispositivos grandes -->
+        <img
+          class="hidden md:block w-2/4 h-auto absolute left-0 transform translate-x-1/2 md:-translate-x-[25%] opacity-75 rounded"
+          src="img/article-5.webp"
+          alt="Descripción de la primera imagen"
+        />
+
+        <!-- Segunda imagen a la derecha en dispositivos grandes -->
+        <img
+          class="hidden md:block w-2/4 h-auto absolute right-0 transform translate-x-1/2 md:-translate-x-[-25%] opacity-75 rounded"
+          src="img/article-4.webp"
+          alt="Descripción de la segunda imagen"
+        />
+      </div>
+    </section>
 
     <section class="mb-8">
       <h2 class="text-2xl font-bold mb-4">Nuestro Equipo</h2>
-      <p class="text-lg leading-relaxed mb-4">
+      <p class="text-lg leading-relaxed mb-4 md:pl-12 md:pr-12">
         Contamos con un equipo talentoso y apasionado que trabaja de manera
         colaborativa para alcanzar nuestros objetivos. Valoramos la diversidad y
         la inclusión, creando un entorno donde cada miembro pueda prosperar.
       </p>
       <img
-        class="w-full h-auto mb-4 md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto"
+        class="w-full h-auto mb-4 md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto rounded-lg shadow"
         src="img/article-6.webp"
         alt="Descripción de la imagen 2"
       />
